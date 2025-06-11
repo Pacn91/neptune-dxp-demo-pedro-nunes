@@ -1,0 +1,48 @@
+{
+	"id": "083102fe-66a0-4579-8cb8-1f33df30a24d",
+	"createdAt": "2025-06-09T17:12:17.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "763adfb0-7341-4f2e-ed85-416c31ae1352",
+			"fieldName": "title",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Movie title",
+			"isNullable": true
+		},
+		{
+			"id": "4cc6bd4b-4e43-4199-8fa3-3b15b20ae9f5",
+			"fieldName": "poster_url",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Poster URL",
+			"isNullable": true
+		},
+		{
+			"id": "69ed41f6-62a8-4954-ab1b-1a4213ab1d61",
+			"fieldName": "comment",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "99364f5c-7dac-4045-e248-7fc709ee68f1",
+			"fieldName": "rating",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "starwars_favorites",
+	"description": "Table used to store favorite starwars movies",
+	"ver": "25.06.11.1942",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "3acb20c0-872c-493e-97e5-3873367ae9d8",
+	"generationStrategy": "uuid",
+	"rolesRead": [],
+	"rolesWrite": []
+}

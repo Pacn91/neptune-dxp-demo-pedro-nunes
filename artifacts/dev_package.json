@@ -1,0 +1,77 @@
+{
+	"id": "3acb20c0-872c-493e-97e5-3873367ae9d8",
+	"createdAt": "2025-06-09T17:08:28.000Z",
+	"createdBy": "admin",
+	"git": {
+		"remote": "https://github.com/Pacn91/neptune-dxp-demo-pedro-nunes.git",
+		"branch": "master"
+	},
+	"name": "Starwars-dxp-demo",
+	"description": "Starwars package",
+	"ver": "25.06.11.2318",
+	"enableCICD": true,
+	"internalReadOnly": false,
+	"oeVersion": null,
+	"excludeTemplateFiles": true,
+	"roles": [],
+	"apps": [
+		{
+			"id": "412b7b65-98a3-4fad-92a6-4090870f85d0",
+			"application": "starwars",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "f05b6132-d112-495c-8f4f-4f4db8061231",
+			"name": "Starwars API",
+			"description": "This API is used to get information about Starwars movies",
+			"apiGroup": null
+		},
+		{
+			"id": "ca6b1fa0-5e5f-48c8-afbc-aa6cfaa316b7",
+			"name": "Starwars Favourites",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "083102fe-66a0-4579-8cb8-1f33df30a24d",
+			"name": "starwars_favorites",
+			"description": "Table used to store favorite starwars movies"
+		}
+	],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"tile_layout": [],
+	"category": [],
+	"tilegroup_layout": [],
+	"launchpad": [],
+	"launchpad_layout": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": [],
+	"theme_ui5": [],
+	"webapp": []
+}

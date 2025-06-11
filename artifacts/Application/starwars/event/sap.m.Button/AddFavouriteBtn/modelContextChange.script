@@ -1,0 +1,10 @@
+const button = oEvent.getSource()
+const context = oEvent.oSource.getBindingContext();
+const movie = context.getObject();
+
+const isFavourite = favouritesList.some(f => f.title === movie.title)
+
+if (isFavourite) {
+    button.setIcon("sap-icon://favorite")
+    button.setTooltip("Remove as favourite")
+} 
