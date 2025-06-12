@@ -664,7 +664,7 @@
 								{
 									"attribute": "tabDensityMode",
 									"grouping": "Properties",
-									"value": "Compact",
+									"value": "Cozy",
 									"script": "",
 									"translation": []
 								}
@@ -4732,7 +4732,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "25.06.12.1711",
+	"ver": "25.06.12.2021",
 	"application": "starwars",
 	"title": "",
 	"description": "",

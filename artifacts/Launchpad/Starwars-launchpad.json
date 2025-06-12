@@ -12,7 +12,9 @@
 		"showAccessibilityFocusIndicator": true,
 		"enableTopMenu": true,
 		"noSubmenuHover": true,
-		"enhancement": ""
+		"enhancement": "",
+		"hideTopHeader": false,
+		"oneLineTopMenu": true
 	},
 	"enhancement": [],
 	"name": "Starwars-launchpad",
@@ -49,7 +51,7 @@
 	"searchEnableShadeCalc": null,
 	"usedEnableShadeCalc": null,
 	"enableTrace": false,
-	"ver": "25.06.12.1709",
+	"ver": "25.06.12.1827",
 	"pwa_enable": false,
 	"pwa_customImageIos": null,
 	"pwa_customImageAndroidOld": null,
@@ -59,7 +61,7 @@
 	"pwa_displayMode": null,
 	"pwa_themeColor": null,
 	"layout_light": null,
-	"layout_dark": null,
+	"layout_dark": "a09266c7-60b8-43e8-9749-eb9737c80af3",
 	"layout_preference": 4,
 	"pwa_backgroundColor": null,
 	"passwordResetEmail": null,

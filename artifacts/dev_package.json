@@ -76,7 +76,13 @@
 			"description": null
 		}
 	],
-	"launchpad_layout": [],
+	"launchpad_layout": [
+		{
+			"id": "a09266c7-60b8-43e8-9749-eb9737c80af3",
+			"NAME": "Starwars-layout",
+			"DESCR": null
+		}
+	],
 	"certificates": [],
 	"role": [],
 	"systems": [],
