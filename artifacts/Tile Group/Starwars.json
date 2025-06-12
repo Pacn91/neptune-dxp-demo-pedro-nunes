@@ -99,9 +99,9 @@
 	"tiles": [
 		{
 			"id": "04783db6-ff58-4df2-9012-81fcabc83bfe",
-			"name": "Starwars",
-			"title": "Starwars",
-			"ver": "25.06.12.1706"
+			"name": "Starwars-Demo-App",
+			"title": "",
+			"ver": "25.06.12.1729"
 		}
 	],
 	"tilegroups": [],
