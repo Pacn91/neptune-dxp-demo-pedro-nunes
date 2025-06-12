@@ -613,7 +613,7 @@
 														{
 															"attribute": "type",
 															"grouping": "Properties",
-															"value": "Active",
+															"value": "Navigation",
 															"script": "",
 															"translation": []
 														},
@@ -632,10 +632,10 @@
 															"translation": []
 														},
 														{
-															"attribute": "info",
-															"grouping": "Properties",
-															"value": "{birth_year}",
-															"script": "",
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.StandardListItem/StandardListItem/press.script",
 															"translation": []
 														}
 													],
@@ -913,7 +913,7 @@
 						},
 						{
 							"fieldNo": "c651da69-6f1c-476e-95b0-5ae6b1bb0ef0",
-							"fieldName": "Bar",
+							"fieldName": "BarFooter",
 							"fieldParent": "79ce5a52-2794-489e-a9f6-b918fadfea56",
 							"fieldType": "sap.m.Bar",
 							"script": "",
@@ -984,6 +984,346 @@
 											"data": []
 										}
 									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "c3a6db96-b2b7-419b-9ee2-1106e8fc9b81",
+					"fieldName": "PersonDetailPage",
+					"fieldParent": "22a05b31-1eed-454f-bd79-ac784aa98df9",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "navButtonPress",
+							"grouping": "Events",
+							"value": "App.backToPage(HomePage)",
+							"script": "App.backToPage(HomePage)",
+							"translation": []
+						},
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Person Detail Page",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+							"fieldName": "SimpleFormPersonDetail",
+							"fieldParent": "c3a6db96-b2b7-419b-9ee2-1106e8fc9b81",
+							"fieldType": "sap.ui.layout.form.SimpleForm",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Starwars API>Person",
+							"bindingType": "u",
+							"bindingSource": "API",
+							"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
+							"bindingPathID": "8c0614af-b3a2-40cc-a686-4a5b80eefd18",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "5ef3bfc2-3472-4bf5-ac1b-b9f8fbbf51ec",
+									"fieldName": "lblSimpleFormheight",
+									"fieldParent": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "height",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "7be977b7-903a-4c50-d822-7aceecaf3dab",
+									"fieldName": "txtSimpleFormheight",
+									"fieldParent": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/height}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "2cfdd4b6-cb4e-4814-8dbf-94471691b65a",
+									"fieldName": "lblSimpleFormmass",
+									"fieldParent": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "mass",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "6fab5477-ae14-4dae-f8c4-acc840e6cc9b",
+									"fieldName": "txtSimpleFormmass",
+									"fieldParent": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/mass}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "2838fdfe-a910-4c88-83e7-447d6cb89004",
+									"fieldName": "lblSimpleFormhair_color",
+									"fieldParent": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "hair_color",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "30eb6821-837e-4664-beb6-fe878b572ab5",
+									"fieldName": "txtSimpleFormhair_color",
+									"fieldParent": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/hair_color}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "ed548ec5-3f1b-4acd-ce82-789d2863a526",
+									"fieldName": "lblSimpleFormskin_color",
+									"fieldParent": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "skin_color",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "95c7891a-1bee-4d35-94d9-49722c6d74ff",
+									"fieldName": "txtSimpleFormskin_color",
+									"fieldParent": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/skin_color}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "ba694e6f-c023-4d9c-c48e-47eed95aa32c",
+									"fieldName": "lblSimpleFormeye_color",
+									"fieldParent": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "eye_color",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "d9ec92a4-9214-4536-94ac-e7b47903dffd",
+									"fieldName": "txtSimpleFormeye_color",
+									"fieldParent": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/eye_color}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "909b8461-e294-475c-dfcb-9f8fcd85d183",
+									"fieldName": "lblSimpleFormbirth_year",
+									"fieldParent": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "birth_year",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "389d18e1-12fb-45b7-a999-db4d979baeea",
+									"fieldName": "txtSimpleFormbirth_year",
+									"fieldParent": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/birth_year}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "1d676a3c-d74f-41c9-852c-c49fc7561c6d",
+									"fieldName": "lblSimpleFormgender",
+									"fieldParent": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "gender",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "e78c1b42-0151-483e-cba9-d12d2b606e3b",
+									"fieldName": "txtSimpleFormgender",
+									"fieldParent": "9ae0ed7b-f42d-45ce-c7ed-b286e6d3f24c",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/gender}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
 								}
 							]
 						}
@@ -1868,7 +2208,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "25.06.11.1915",
+	"ver": "25.06.12.0841",
 	"application": "starwars",
 	"title": "",
 	"description": "",
