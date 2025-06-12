@@ -1,0 +1,6 @@
+const context = oEvent.oSource.getBindingContext();
+const person = context.getObject();
+
+modelSimpleFormPersonDetail.setData(person)
+PersonDetailPage.setTitle(person.name)
+App.to(PersonDetailPage)

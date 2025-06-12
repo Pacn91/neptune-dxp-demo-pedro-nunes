@@ -1,0 +1,6 @@
+const context = oEvent.oSource.getBindingContext()
+const specie = context.getObject()
+
+modelSpecieSimpleForm.setData(specie)
+SpecieDetailPage.setTitle(specie.name)
+App.to(SpecieDetailPage)

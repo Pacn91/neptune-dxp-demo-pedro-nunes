@@ -1,0 +1,2 @@
+modelFavouriteSimpleForm.setData({})
+FavouritesDialog.close()

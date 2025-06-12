@@ -1,0 +1,6 @@
+const context = oEvent.oSource.getBindingContext();
+const planet = context.getObject();
+
+modelPlanetSimpleForm.setData(planet)
+PlanetDetailPage.setTitle(planet.name)
+App.to(PlanetDetailPage)

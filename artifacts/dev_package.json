@@ -16,6 +16,12 @@
 	"roles": [],
 	"apps": [
 		{
+			"id": "4702d9cb-322e-43de-a4b2-16e34b260fe0",
+			"application": "teste",
+			"title": "",
+			"description": ""
+		},
+		{
 			"id": "412b7b65-98a3-4fad-92a6-4090870f85d0",
 			"application": "starwars",
 			"title": "",
@@ -53,11 +59,29 @@
 	"reports": [],
 	"api_authentication": [],
 	"api_group": [],
-	"tile": [],
+	"tile": [
+		{
+			"id": "04783db6-ff58-4df2-9012-81fcabc83bfe",
+			"description": null,
+			"name": "Starwars"
+		}
+	],
 	"tile_layout": [],
-	"category": [],
+	"category": [
+		{
+			"id": "e88312a6-e684-4890-ba91-4b851476977c",
+			"description": null,
+			"name": "Starwars"
+		}
+	],
 	"tilegroup_layout": [],
-	"launchpad": [],
+	"launchpad": [
+		{
+			"id": "d16acfda-7afa-44c7-8b0a-9d08ec9bf347",
+			"name": "Starwars-launchpad",
+			"description": null
+		}
+	],
 	"launchpad_layout": [],
 	"certificates": [],
 	"role": [],

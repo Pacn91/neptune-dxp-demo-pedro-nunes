@@ -1,0 +1,6 @@
+const context = oEvent.oSource.getBindingContext();
+const vehicle = context.getObject();
+
+modelVehicleSimpleForm.setData(vehicle)
+VehicleDetailPage.setTitle(vehicle.name)
+App.to(VehicleDetailPage)

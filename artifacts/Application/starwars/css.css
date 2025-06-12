@@ -1,3 +1,21 @@
+.tile-container {
+    gap: 32px;
+}
+
+.grid {
+    grid-template-columns: repeat( auto-fit, minmax(174px, 1fr));
+}
+
+.tile-content {
+    & .sapMTileCntFtrTxt {
+        font-size: 32px;
+        height: 3rem;
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 6px #000;
+    }
+}
+
 .item {
     padding: 16px;
 }

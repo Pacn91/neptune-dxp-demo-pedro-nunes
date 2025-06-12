@@ -1,0 +1,6 @@
+const context = oEvent.oSource.getBindingContext();
+const starship = context.getObject();
+
+modelStarshipSimpleForm.setData(starship)
+StarshipDetailPage.setTitle(starship.name)
+App.to(StarshipDetailPage)

@@ -15,7 +15,7 @@
 			"attributes": [],
 			"data": [
 				{
-					"fieldNo": "79ce5a52-2794-489e-a9f6-b918fadfea56",
+					"fieldNo": "591b7ceb-8ce5-49c1-d500-e792af539b3f",
 					"fieldName": "HomePage",
 					"fieldParent": "22a05b31-1eed-454f-bd79-ac784aa98df9",
 					"fieldType": "sap.m.Page",
@@ -27,7 +27,7 @@
 						{
 							"attribute": "title",
 							"grouping": "Properties",
-							"value": "STARWARS UNIVERSE",
+							"value": "STARWARS APP",
 							"script": "",
 							"translation": []
 						},
@@ -35,6 +35,617 @@
 							"attribute": "titleAlignment",
 							"grouping": "Properties",
 							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "d80fd40d-9608-4e01-dcac-977dc41ac642",
+							"fieldName": "GridList",
+							"fieldParent": "591b7ceb-8ce5-49c1-d500-e792af539b3f",
+							"fieldType": "sap.f.GridList",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "styleClass",
+									"grouping": "Properties",
+									"value": "grid",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "styleClassPadding",
+									"grouping": "Properties",
+									"value": "sapUiContentPadding",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "eec92cc7-8ed9-4f1a-f61f-250d82bf3ad0",
+									"fieldName": "GridListItem",
+									"fieldParent": "d80fd40d-9608-4e01-dcac-977dc41ac642",
+									"fieldType": "sap.f.GridListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "b95ed604-a196-48c7-e784-213a10544d15",
+											"fieldName": "GenericTileMovies",
+											"fieldParent": "eec92cc7-8ed9-4f1a-f61f-250d82bf3ad0",
+											"fieldType": "sap.m.GenericTile",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "backgroundImage",
+													"grouping": "Properties",
+													"value": "/media/root/Starwars/movies.jpg",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "App.to(MoviesPage)",
+													"script": "App.to(MoviesPage)",
+													"translation": []
+												},
+												{
+													"attribute": "width",
+													"grouping": "Properties",
+													"value": "100%",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "4f82f19b-6a3e-4383-c2ff-0110dbfd151d",
+													"fieldName": "TileContentMovies",
+													"fieldParent": "b95ed604-a196-48c7-e784-213a10544d15",
+													"fieldType": "sap.m.TileContent",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "footer",
+															"grouping": "Properties",
+															"value": "Movies",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "footerColor",
+															"grouping": "Properties",
+															"value": "Neutral",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "frameType",
+															"grouping": "Properties",
+															"value": "Auto",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "tile-content",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "662b372f-3ae8-4173-84bf-a71bc889826f",
+									"fieldName": "GridListItem1",
+									"fieldParent": "d80fd40d-9608-4e01-dcac-977dc41ac642",
+									"fieldType": "sap.f.GridListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "ebf2cc82-5475-466e-98f5-534812a31bfa",
+											"fieldName": "GenericTilePeople",
+											"fieldParent": "662b372f-3ae8-4173-84bf-a71bc889826f",
+											"fieldType": "sap.m.GenericTile",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "backgroundImage",
+													"grouping": "Properties",
+													"value": "/media/root/Starwars/people.jpg",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "backgroundColor",
+													"grouping": "Properties",
+													"value": "000000",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "App.to(PeoplePage)",
+													"script": "App.to(PeoplePage)",
+													"translation": []
+												},
+												{
+													"attribute": "width",
+													"grouping": "Properties",
+													"value": "100%",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "127e74e9-d1d9-4f12-b108-cdf0c342e20e",
+													"fieldName": "TileContentPeople",
+													"fieldParent": "ebf2cc82-5475-466e-98f5-534812a31bfa",
+													"fieldType": "sap.m.TileContent",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "footer",
+															"grouping": "Properties",
+															"value": "People",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "footerColor",
+															"grouping": "Properties",
+															"value": "Neutral",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "frameType",
+															"grouping": "Properties",
+															"value": "Auto",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "tile-content",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "78a54006-17d6-4387-dffd-655cfc6f4dfe",
+									"fieldName": "GridListItem2",
+									"fieldParent": "d80fd40d-9608-4e01-dcac-977dc41ac642",
+									"fieldType": "sap.f.GridListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "71e0dbb8-df95-4d70-e47c-b4b606e6e9bb",
+											"fieldName": "GenericTileSpecies",
+											"fieldParent": "78a54006-17d6-4387-dffd-655cfc6f4dfe",
+											"fieldType": "sap.m.GenericTile",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "backgroundImage",
+													"grouping": "Properties",
+													"value": "/media/root/Starwars/species.jpg",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "App.to(SpeciesPage)",
+													"script": "App.to(SpeciesPage)",
+													"translation": []
+												},
+												{
+													"attribute": "width",
+													"grouping": "Properties",
+													"value": "100%",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "89fdbf09-2028-4406-ba84-92c9a6ed9967",
+													"fieldName": "TileContentSpecies",
+													"fieldParent": "71e0dbb8-df95-4d70-e47c-b4b606e6e9bb",
+													"fieldType": "sap.m.TileContent",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "footer",
+															"grouping": "Properties",
+															"value": "Species",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "footerColor",
+															"grouping": "Properties",
+															"value": "Neutral",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "frameType",
+															"grouping": "Properties",
+															"value": "Auto",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "tile-content",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "310ed39b-6c39-4243-f592-ff5579eebe7b",
+									"fieldName": "GridListItem3",
+									"fieldParent": "d80fd40d-9608-4e01-dcac-977dc41ac642",
+									"fieldType": "sap.f.GridListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "3e8bff59-3fb3-42ed-fd92-bce3af2476e9",
+											"fieldName": "GenericTileVehicles",
+											"fieldParent": "310ed39b-6c39-4243-f592-ff5579eebe7b",
+											"fieldType": "sap.m.GenericTile",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "backgroundImage",
+													"grouping": "Properties",
+													"value": "/media/root/Starwars/vehicles.jpg",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "App.to(VehiclesPage)",
+													"script": "App.to(VehiclesPage)",
+													"translation": []
+												},
+												{
+													"attribute": "width",
+													"grouping": "Properties",
+													"value": "100%",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "d66fb15e-ec25-434a-e613-08f56c6d858e",
+													"fieldName": "TileContentVehicles",
+													"fieldParent": "3e8bff59-3fb3-42ed-fd92-bce3af2476e9",
+													"fieldType": "sap.m.TileContent",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "footer",
+															"grouping": "Properties",
+															"value": "Vehicles",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "footerColor",
+															"grouping": "Properties",
+															"value": "Neutral",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "frameType",
+															"grouping": "Properties",
+															"value": "Auto",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "tile-content",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "d0dfff5c-7d5d-45da-ba11-18dd968e651b",
+									"fieldName": "GridListItem4",
+									"fieldParent": "d80fd40d-9608-4e01-dcac-977dc41ac642",
+									"fieldType": "sap.f.GridListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "4013e46e-2c6e-49b3-b857-bc08a7120c7e",
+											"fieldName": "GenericTileStarships",
+											"fieldParent": "d0dfff5c-7d5d-45da-ba11-18dd968e651b",
+											"fieldType": "sap.m.GenericTile",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "backgroundImage",
+													"grouping": "Properties",
+													"value": "/media/root/Starwars/starships.jpg",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "App.to(StarshipsPage)",
+													"script": "App.to(StarshipsPage)",
+													"translation": []
+												},
+												{
+													"attribute": "width",
+													"grouping": "Properties",
+													"value": "100%",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "51351cb9-6d35-404b-cd7b-814f01ce2ae1",
+													"fieldName": "TileContentStarships",
+													"fieldParent": "4013e46e-2c6e-49b3-b857-bc08a7120c7e",
+													"fieldType": "sap.m.TileContent",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "footer",
+															"grouping": "Properties",
+															"value": "Starships",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "footerColor",
+															"grouping": "Properties",
+															"value": "Neutral",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "frameType",
+															"grouping": "Properties",
+															"value": "Auto",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "tile-content",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "24c8477f-7fb7-444c-9724-39527c3fdb0c",
+									"fieldName": "GridListItem5",
+									"fieldParent": "d80fd40d-9608-4e01-dcac-977dc41ac642",
+									"fieldType": "sap.f.GridListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "0981a980-3da0-473c-921b-0a63e4b85d90",
+											"fieldName": "GenericTilePlanets",
+											"fieldParent": "24c8477f-7fb7-444c-9724-39527c3fdb0c",
+											"fieldType": "sap.m.GenericTile",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "backgroundImage",
+													"grouping": "Properties",
+													"value": "/media/root/Starwars/planets.jpg",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "App.to(PlanetsPage)",
+													"script": "App.to(PlanetsPage)",
+													"translation": []
+												},
+												{
+													"attribute": "width",
+													"grouping": "Properties",
+													"value": "100%",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "a9971c51-0078-41e9-d185-cf557d932818",
+													"fieldName": "TileContentPlanets",
+													"fieldParent": "0981a980-3da0-473c-921b-0a63e4b85d90",
+													"fieldType": "sap.m.TileContent",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "footer",
+															"grouping": "Properties",
+															"value": "Planets",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "footerColor",
+															"grouping": "Properties",
+															"value": "Neutral",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "frameType",
+															"grouping": "Properties",
+															"value": "Auto",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "tile-content",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "79ce5a52-2794-489e-a9f6-b918fadfea56",
+					"fieldName": "MoviesPage",
+					"fieldParent": "22a05b31-1eed-454f-bd79-ac784aa98df9",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Movies",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "navButtonPress",
+							"grouping": "Events",
+							"value": "App.backToPage(HomePage)",
+							"script": "App.backToPage(HomePage)",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "true",
 							"script": "",
 							"translation": []
 						}
@@ -492,7 +1103,7 @@
 																		{
 																			"attribute": "icon",
 																			"grouping": "Properties",
-																			"value": "sap-icon://add-favorite",
+																			"value": "{favouritesIcon}",
 																			"script": "",
 																			"translation": []
 																		},
@@ -502,13 +1113,6 @@
 																			"value": "Anonymous Function",
 																			"script": "file://event/sap.m.Button/AddFavouriteBtn/press.js",
 																			"language": "javascript",
-																			"translation": []
-																		},
-																		{
-																			"attribute": "modelContextChange",
-																			"grouping": "Events",
-																			"value": "Anonymous Function",
-																			"script": "file://event/sap.m.Button/AddFavouriteBtn/modelContextChange.script",
 																			"translation": []
 																		},
 																		{
@@ -531,7 +1135,7 @@
 								},
 								{
 									"fieldNo": "e8a82e56-9d46-46d9-c0f7-6ccdc8dc726a",
-									"fieldName": "TabPeople",
+									"fieldName": "TabFavourites",
 									"fieldParent": "b8998381-6aef-4897-f75a-d4ef524e0449",
 									"fieldType": "sap.m.IconTabFilter",
 									"script": "",
@@ -542,7 +1146,7 @@
 										{
 											"attribute": "text",
 											"grouping": "Properties",
-											"value": "People",
+											"value": "Favourites",
 											"script": "",
 											"translation": []
 										},
@@ -556,434 +1160,484 @@
 									],
 									"data": [
 										{
-											"fieldNo": "a0d41e9c-c638-439b-9ef1-b363e13fe657",
-											"fieldName": "PeopleList",
+											"fieldNo": "dc8248f1-34c2-4535-809d-8e848d592cb1",
+											"fieldName": "FavouritesList",
 											"fieldParent": "e8a82e56-9d46-46d9-c0f7-6ccdc8dc726a",
 											"fieldType": "sap.m.List",
 											"script": "",
 											"customComponent": false,
-											"bindingValue": "Starwars API>Person",
+											"bindingValue": "Starwars Favourites>favourites",
 											"bindingType": "h",
 											"bindingSource": "API",
-											"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
-											"bindingPathID": "8c0614af-b3a2-40cc-a686-4a5b80eefd18",
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "growing",
-													"grouping": "Properties",
-													"value": "true",
-													"script": "",
-													"translation": []
-												},
-												{
-													"attribute": "growingScrollToLoad",
-													"grouping": "Properties",
-													"value": "false",
-													"script": "",
-													"translation": []
-												},
-												{
-													"attribute": "growingThreshold",
-													"grouping": "Properties",
-													"value": "9",
-													"script": "",
-													"translation": []
-												},
-												{
-													"attribute": "growingTriggerText",
-													"grouping": "Properties",
-													"value": "Load more",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": [
-												{
-													"fieldNo": "ecb68e76-2bbe-4da5-91dd-9dcafc02d0f7",
-													"fieldName": "StandardListItem",
-													"fieldParent": "a0d41e9c-c638-439b-9ef1-b363e13fe657",
-													"fieldType": "sap.m.StandardListItem",
-													"script": "",
-													"customComponent": false,
-													"request": [],
-													"response": [],
-													"attributes": [
-														{
-															"attribute": "type",
-															"grouping": "Properties",
-															"value": "Navigation",
-															"script": "",
-															"translation": []
-														},
-														{
-															"attribute": "title",
-															"grouping": "Properties",
-															"value": "{name}",
-															"script": "",
-															"translation": []
-														},
-														{
-															"attribute": "icon",
-															"grouping": "Properties",
-															"value": "sap-icon://nep/avatar",
-															"script": "",
-															"translation": []
-														},
-														{
-															"attribute": "press",
-															"grouping": "Events",
-															"value": "Anonymous Function",
-															"script": "file://event/sap.m.StandardListItem/StandardListItem/press.script",
-															"translation": []
-														}
-													],
-													"data": []
-												}
-											]
-										}
-									]
-								},
-								{
-									"fieldNo": "e0873479-8f03-4a9b-b832-be4f16a4ce68",
-									"fieldName": "TabSpecies",
-									"fieldParent": "b8998381-6aef-4897-f75a-d4ef524e0449",
-									"fieldType": "sap.m.IconTabFilter",
-									"script": "",
-									"customComponent": false,
-									"request": [],
-									"response": [],
-									"attributes": [
-										{
-											"attribute": "text",
-											"grouping": "Properties",
-											"value": "Species",
-											"script": "",
-											"translation": []
-										}
-									],
-									"data": [
-										{
-											"fieldNo": "6d91601a-b409-43c2-f9c4-c1c112f365ee",
-											"fieldName": "SpeciesList",
-											"fieldParent": "e0873479-8f03-4a9b-b832-be4f16a4ce68",
-											"fieldType": "sap.m.List",
-											"script": "",
-											"customComponent": false,
-											"bindingValue": "Starwars API>Specie",
-											"bindingType": "h",
-											"bindingSource": "API",
-											"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
-											"bindingPathID": "a263ba10-40f1-4dcd-fdf8-02dda512ad8d",
+											"bindingParentID": "ca6b1fa0-5e5f-48c8-afbc-aa6cfaa316b7",
+											"bindingPathID": "8df0d765-8afb-467c-9c2d-5dbbd92f9f96",
 											"request": [],
 											"response": [],
 											"attributes": [],
 											"data": [
 												{
-													"fieldNo": "0aa8ad9f-a647-4862-a6bb-ca861298f11a",
-													"fieldName": "oObjectListItemSpecies",
-													"fieldParent": "6d91601a-b409-43c2-f9c4-c1c112f365ee",
-													"fieldType": "sap.m.ObjectListItem",
+													"fieldNo": "53d6a22f-0e18-4627-e4ed-e0c9bd1b0185",
+													"fieldName": "CustomListItemFavourite",
+													"fieldParent": "dc8248f1-34c2-4535-809d-8e848d592cb1",
+													"fieldType": "sap.m.CustomListItem",
 													"script": "",
 													"customComponent": false,
 													"request": [],
 													"response": [],
-													"attributes": [
+													"attributes": [],
+													"data": [
 														{
-															"attribute": "type",
-															"grouping": "Properties",
-															"value": "Active",
+															"fieldNo": "ef8a2be7-8558-48d1-81d0-2e9d1fbcd9af",
+															"fieldName": "HBox1",
+															"fieldParent": "53d6a22f-0e18-4627-e4ed-e0c9bd1b0185",
+															"fieldType": "sap.m.HBox",
 															"script": "",
-															"translation": []
-														},
-														{
-															"attribute": "title",
-															"grouping": "Properties",
-															"value": "{name}",
-															"script": "",
-															"translation": []
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "justifyContent",
+																	"grouping": "Properties",
+																	"value": "SpaceBetween",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "alignItems",
+																	"grouping": "Properties",
+																	"value": "Start",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "wrap",
+																	"grouping": "Properties",
+																	"value": "NoWrap",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": [
+																{
+																	"fieldNo": "5d03ab90-08a6-46d9-845f-e05778775908",
+																	"fieldName": "HBox2",
+																	"fieldParent": "ef8a2be7-8558-48d1-81d0-2e9d1fbcd9af",
+																	"fieldType": "sap.m.HBox",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "fitContainer",
+																			"grouping": "Properties",
+																			"value": "true",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "justifyContent",
+																			"grouping": "Properties",
+																			"value": "Start",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "alignItems",
+																			"grouping": "Properties",
+																			"value": "Start",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "wrap",
+																			"grouping": "Properties",
+																			"value": "NoWrap",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "hbox-favourite-info",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": [
+																		{
+																			"fieldNo": "d19baa0f-6473-409a-d72a-dcf596cef34e",
+																			"fieldName": "Avatar",
+																			"fieldParent": "5d03ab90-08a6-46d9-845f-e05778775908",
+																			"fieldType": "sap.f.Avatar",
+																			"script": "",
+																			"customComponent": false,
+																			"request": [],
+																			"response": [],
+																			"attributes": [
+																				{
+																					"attribute": "src",
+																					"grouping": "Properties",
+																					"value": "{poster_url}",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "displayShape",
+																					"grouping": "Properties",
+																					"value": "Square",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "displaySize",
+																					"grouping": "Properties",
+																					"value": "XL",
+																					"script": "",
+																					"translation": []
+																				}
+																			],
+																			"data": []
+																		},
+																		{
+																			"fieldNo": "33e024fc-985e-4b65-b71d-c4ae02a7894f",
+																			"fieldName": "VBox2",
+																			"fieldParent": "5d03ab90-08a6-46d9-845f-e05778775908",
+																			"fieldType": "sap.m.VBox",
+																			"script": "",
+																			"customComponent": false,
+																			"request": [],
+																			"response": [],
+																			"attributes": [
+																				{
+																					"attribute": "fitContainer",
+																					"grouping": "Properties",
+																					"value": "true",
+																					"script": "",
+																					"translation": []
+																				}
+																			],
+																			"data": [
+																				{
+																					"fieldNo": "29f23fa4-6b53-4d36-c0d0-44349b4f95a6",
+																					"fieldName": "Title",
+																					"fieldParent": "33e024fc-985e-4b65-b71d-c4ae02a7894f",
+																					"fieldType": "sap.m.Title",
+																					"script": "",
+																					"customComponent": false,
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "text",
+																							"grouping": "Properties",
+																							"value": "{title}",
+																							"script": "",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				},
+																				{
+																					"fieldNo": "c46a0e61-ab0a-4b6d-d586-abd7e2b5c53b",
+																					"fieldName": "RatingIndicator1",
+																					"fieldParent": "33e024fc-985e-4b65-b71d-c4ae02a7894f",
+																					"fieldType": "sap.m.RatingIndicator",
+																					"script": "",
+																					"customComponent": false,
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "value",
+																							"grouping": "Properties",
+																							"value": "{rating}",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "displayOnly",
+																							"grouping": "Properties",
+																							"value": "true",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "editable",
+																							"grouping": "Properties",
+																							"value": "false",
+																							"script": "",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				},
+																				{
+																					"fieldNo": "ffe9a8ab-73b2-4727-e434-ac49f8afefd2",
+																					"fieldName": "ExpandableText",
+																					"fieldParent": "33e024fc-985e-4b65-b71d-c4ae02a7894f",
+																					"fieldType": "sap.m.ExpandableText",
+																					"script": "",
+																					"customComponent": false,
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "text",
+																							"grouping": "Properties",
+																							"value": "{comment}",
+																							"script": "",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"fieldNo": "554332a6-984a-48f4-ce8f-4d47a50c84ef",
+																	"fieldName": "VBox1",
+																	"fieldParent": "ef8a2be7-8558-48d1-81d0-2e9d1fbcd9af",
+																	"fieldType": "sap.m.VBox",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "direction",
+																			"grouping": "Properties",
+																			"value": "Column",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "justifyContent",
+																			"grouping": "Properties",
+																			"value": "Center",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "item",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": [
+																		{
+																			"fieldNo": "3d83336d-d061-40bc-9bfb-f8680107e86c",
+																			"fieldName": "ButtonFavouriteEdit",
+																			"fieldParent": "554332a6-984a-48f4-ce8f-4d47a50c84ef",
+																			"fieldType": "sap.m.Button",
+																			"script": "",
+																			"customComponent": false,
+																			"request": [],
+																			"response": [],
+																			"attributes": [
+																				{
+																					"attribute": "press",
+																					"grouping": "Events",
+																					"value": "Anonymous Function",
+																					"script": "file://event/sap.m.Button/ButtonFavouriteEdit/press.js",
+																					"language": "javascript",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "icon",
+																					"grouping": "Properties",
+																					"value": "sap-icon://edit",
+																					"script": "",
+																					"translation": []
+																				}
+																			],
+																			"data": []
+																		},
+																		{
+																			"fieldNo": "56c853e4-2d6a-4c8f-e975-087c7af346d9",
+																			"fieldName": "ButtonFavouriteDelete",
+																			"fieldParent": "554332a6-984a-48f4-ce8f-4d47a50c84ef",
+																			"fieldType": "sap.m.Button",
+																			"script": "",
+																			"customComponent": false,
+																			"request": [],
+																			"response": [],
+																			"attributes": [
+																				{
+																					"attribute": "press",
+																					"grouping": "Events",
+																					"value": "Anonymous Function",
+																					"script": "file://event/sap.m.Button/ButtonFavouriteDelete/press.script",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "type",
+																					"grouping": "Properties",
+																					"value": "Negative",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "icon",
+																					"grouping": "Properties",
+																					"value": "sap-icon://delete",
+																					"script": "",
+																					"translation": []
+																				}
+																			],
+																			"data": []
+																		}
+																	]
+																}
+															]
 														}
-													],
-													"data": []
-												}
-											]
-										}
-									]
-								},
-								{
-									"fieldNo": "fe520060-548c-4c8b-caf9-27d17a7f8c24",
-									"fieldName": "TabVehicles",
-									"fieldParent": "b8998381-6aef-4897-f75a-d4ef524e0449",
-									"fieldType": "sap.m.IconTabFilter",
-									"script": "",
-									"customComponent": false,
-									"request": [],
-									"response": [],
-									"attributes": [
-										{
-											"attribute": "text",
-											"grouping": "Properties",
-											"value": "Vehicles",
-											"script": "",
-											"translation": []
-										}
-									],
-									"data": [
-										{
-											"fieldNo": "501b68c8-988e-4c70-879e-cb00f94ffe46",
-											"fieldName": "VehiclesList",
-											"fieldParent": "fe520060-548c-4c8b-caf9-27d17a7f8c24",
-											"fieldType": "sap.m.List",
-											"script": "",
-											"customComponent": false,
-											"bindingValue": "Starwars API>Vehicle",
-											"bindingType": "h",
-											"bindingSource": "API",
-											"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
-											"bindingPathID": "fb7b4e2b-5b36-41a3-e376-3d6f6bb84721",
-											"request": [],
-											"response": [],
-											"attributes": [],
-											"data": [
-												{
-													"fieldNo": "00a94ba0-d3e3-42fb-9f8d-eb12931020d8",
-													"fieldName": "oObjectListItemVehicles",
-													"fieldParent": "501b68c8-988e-4c70-879e-cb00f94ffe46",
-													"fieldType": "sap.m.ObjectListItem",
-													"script": "",
-													"customComponent": false,
-													"request": [],
-													"response": [],
-													"attributes": [
-														{
-															"attribute": "type",
-															"grouping": "Properties",
-															"value": "Active",
-															"script": "",
-															"translation": []
-														},
-														{
-															"attribute": "title",
-															"grouping": "Properties",
-															"value": "{name}",
-															"script": "",
-															"translation": []
-														}
-													],
-													"data": []
-												}
-											]
-										}
-									]
-								},
-								{
-									"fieldNo": "39290eb1-4477-4ae7-8b6e-2ce04cd0251d",
-									"fieldName": "TabStarships",
-									"fieldParent": "b8998381-6aef-4897-f75a-d4ef524e0449",
-									"fieldType": "sap.m.IconTabFilter",
-									"script": "",
-									"customComponent": false,
-									"request": [],
-									"response": [],
-									"attributes": [
-										{
-											"attribute": "text",
-											"grouping": "Properties",
-											"value": "Starships",
-											"script": "",
-											"translation": []
-										}
-									],
-									"data": [
-										{
-											"fieldNo": "7dbfdd26-47c3-4541-da08-a5b5fce03fa5",
-											"fieldName": "StarshipsList",
-											"fieldParent": "39290eb1-4477-4ae7-8b6e-2ce04cd0251d",
-											"fieldType": "sap.m.List",
-											"script": "",
-											"customComponent": false,
-											"bindingValue": "Starwars API>Starships",
-											"bindingType": "h",
-											"bindingSource": "API",
-											"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
-											"bindingPathID": "40d101b9-91ea-4066-f404-b6f5a6dbd89d",
-											"request": [],
-											"response": [],
-											"attributes": [],
-											"data": [
-												{
-													"fieldNo": "b36c5ca6-b5ed-40ac-ab47-d66285a339f9",
-													"fieldName": "oObjectListItemStarships",
-													"fieldParent": "7dbfdd26-47c3-4541-da08-a5b5fce03fa5",
-													"fieldType": "sap.m.ObjectListItem",
-													"script": "",
-													"customComponent": false,
-													"request": [],
-													"response": [],
-													"attributes": [
-														{
-															"attribute": "type",
-															"grouping": "Properties",
-															"value": "Active",
-															"script": "",
-															"translation": []
-														},
-														{
-															"attribute": "title",
-															"grouping": "Properties",
-															"value": "{name}",
-															"script": "",
-															"translation": []
-														}
-													],
-													"data": []
-												}
-											]
-										}
-									]
-								},
-								{
-									"fieldNo": "afac676c-0df0-455f-8c75-63c7fc4a1264",
-									"fieldName": "TabPlanets",
-									"fieldParent": "b8998381-6aef-4897-f75a-d4ef524e0449",
-									"fieldType": "sap.m.IconTabFilter",
-									"script": "",
-									"customComponent": false,
-									"request": [],
-									"response": [],
-									"attributes": [
-										{
-											"attribute": "text",
-											"grouping": "Properties",
-											"value": "Planets",
-											"script": "",
-											"translation": []
-										}
-									],
-									"data": [
-										{
-											"fieldNo": "76d9233c-9f53-47bc-99ee-70cd851c1540",
-											"fieldName": "PlanetsList",
-											"fieldParent": "afac676c-0df0-455f-8c75-63c7fc4a1264",
-											"fieldType": "sap.m.List",
-											"script": "",
-											"customComponent": false,
-											"bindingValue": "Starwars API>Planet",
-											"bindingType": "h",
-											"bindingSource": "API",
-											"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
-											"bindingPathID": "0e20fa11-7741-4ae0-ad87-3aaa5d1e3bc1",
-											"request": [],
-											"response": [],
-											"attributes": [],
-											"data": [
-												{
-													"fieldNo": "e8c4d6e2-69d1-4f59-fbdb-fc7f3c6a35f0",
-													"fieldName": "oObjectListItemPlanets",
-													"fieldParent": "76d9233c-9f53-47bc-99ee-70cd851c1540",
-													"fieldType": "sap.m.ObjectListItem",
-													"script": "",
-													"customComponent": false,
-													"request": [],
-													"response": [],
-													"attributes": [
-														{
-															"attribute": "type",
-															"grouping": "Properties",
-															"value": "Active",
-															"script": "",
-															"translation": []
-														},
-														{
-															"attribute": "title",
-															"grouping": "Properties",
-															"value": "{name}",
-															"script": "",
-															"translation": []
-														}
-													],
-													"data": []
+													]
 												}
 											]
 										}
 									]
 								}
 							]
+						}
+					]
+				},
+				{
+					"fieldNo": "04aaf20b-390f-4913-f23a-c9d6aede4288",
+					"fieldName": "PeoplePage",
+					"fieldParent": "22a05b31-1eed-454f-bd79-ac784aa98df9",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "navButtonPress",
+							"grouping": "Events",
+							"value": "App.backToPage(HomePage)",
+							"script": "App.backToPage(HomePage)",
+							"translation": []
 						},
 						{
-							"fieldNo": "c651da69-6f1c-476e-95b0-5ae6b1bb0ef0",
-							"fieldName": "BarFooter",
-							"fieldParent": "79ce5a52-2794-489e-a9f6-b918fadfea56",
-							"fieldType": "sap.m.Bar",
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "People",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "6d4ca7e0-973a-4f87-8b5b-df5a5a365434",
+							"fieldName": "PeopleSearchField",
+							"fieldParent": "04aaf20b-390f-4913-f23a-c9d6aede4288",
+							"fieldType": "sap.m.SearchField",
 							"script": "",
 							"customComponent": false,
 							"request": [],
 							"response": [],
 							"attributes": [
 								{
-									"attribute": "position",
-									"grouping": "Parent",
-									"value": "setFooter",
+									"attribute": "liveChange",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/sap.m.SearchField/PeopleSearchField/liveChange.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "a0d41e9c-c638-439b-9ef1-b363e13fe657",
+							"fieldName": "PeopleList",
+							"fieldParent": "04aaf20b-390f-4913-f23a-c9d6aede4288",
+							"fieldType": "sap.m.List",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Starwars API>Person",
+							"bindingType": "h",
+							"bindingSource": "API",
+							"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
+							"bindingPathID": "8c0614af-b3a2-40cc-a686-4a5b80eefd18",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "growing",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "growingScrollToLoad",
+									"grouping": "Properties",
+									"value": "false",
 									"script": "",
 									"translation": []
 								}
 							],
 							"data": [
 								{
-									"fieldNo": "6a08e45d-659d-4318-b6f2-8d90d5063803",
-									"fieldName": "Left",
-									"fieldParent": "c651da69-6f1c-476e-95b0-5ae6b1bb0ef0",
-									"fieldType": "neptune.BarContent",
+									"fieldNo": "ecb68e76-2bbe-4da5-91dd-9dcafc02d0f7",
+									"fieldName": "StandardListItem",
+									"fieldParent": "a0d41e9c-c638-439b-9ef1-b363e13fe657",
+									"fieldType": "sap.m.StandardListItem",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
 										{
-											"attribute": "position",
-											"grouping": "Parent",
-											"value": "ContentLeft",
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Navigation",
 											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "{name}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://nep/avatar",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.StandardListItem/StandardListItem/press.script",
 											"translation": []
 										}
 									],
-									"data": [
-										{
-											"fieldNo": "b552e8a0-e7ea-46e9-caae-16a08ee74cf5",
-											"fieldName": "FavouritesButton",
-											"fieldParent": "6a08e45d-659d-4318-b6f2-8d90d5063803",
-											"fieldType": "sap.m.Button",
-											"script": "",
-											"customComponent": false,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "press",
-													"grouping": "Events",
-													"value": "App.to(FavouritesPage)",
-													"script": "App.to(FavouritesPage)",
-													"translation": []
-												},
-												{
-													"attribute": "text",
-													"grouping": "Properties",
-													"value": "Favourites",
-													"script": "",
-													"translation": []
-												},
-												{
-													"attribute": "icon",
-													"grouping": "Properties",
-													"value": "sap-icon://favorite",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": []
-										}
-									]
+									"data": []
 								}
 							]
 						}
@@ -1330,8 +1984,8 @@
 					]
 				},
 				{
-					"fieldNo": "6cadeb3d-3980-4b76-c308-ffc812ae5882",
-					"fieldName": "FavouritesPage",
+					"fieldNo": "fb467df9-b449-426c-c3b1-05001c12daea",
+					"fieldName": "SpeciesPage",
 					"fieldParent": "22a05b31-1eed-454f-bd79-ac784aa98df9",
 					"fieldType": "sap.m.Page",
 					"script": "",
@@ -1349,7 +2003,7 @@
 						{
 							"attribute": "title",
 							"grouping": "Properties",
-							"value": "Favourites Page",
+							"value": "Species",
 							"script": "",
 							"translation": []
 						},
@@ -1370,343 +2024,2213 @@
 					],
 					"data": [
 						{
-							"fieldNo": "dc8248f1-34c2-4535-809d-8e848d592cb1",
-							"fieldName": "FavouritesList",
-							"fieldParent": "6cadeb3d-3980-4b76-c308-ffc812ae5882",
+							"fieldNo": "182f5c16-64f3-4c8d-a7e6-5859a2283162",
+							"fieldName": "SpecieSearchField",
+							"fieldParent": "fb467df9-b449-426c-c3b1-05001c12daea",
+							"fieldType": "sap.m.SearchField",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "liveChange",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/sap.m.SearchField/SpecieSearchField/liveChange.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "6d91601a-b409-43c2-f9c4-c1c112f365ee",
+							"fieldName": "SpeciesList",
+							"fieldParent": "fb467df9-b449-426c-c3b1-05001c12daea",
 							"fieldType": "sap.m.List",
 							"script": "",
 							"customComponent": false,
-							"bindingValue": "Starwars Favourites>favourites",
+							"bindingValue": "Starwars API>Specie",
 							"bindingType": "h",
 							"bindingSource": "API",
-							"bindingParentID": "ca6b1fa0-5e5f-48c8-afbc-aa6cfaa316b7",
-							"bindingPathID": "8df0d765-8afb-467c-9c2d-5dbbd92f9f96",
+							"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
+							"bindingPathID": "a263ba10-40f1-4dcd-fdf8-02dda512ad8d",
 							"request": [],
 							"response": [],
 							"attributes": [],
 							"data": [
 								{
-									"fieldNo": "53d6a22f-0e18-4627-e4ed-e0c9bd1b0185",
-									"fieldName": "CustomListItemFavourite",
-									"fieldParent": "dc8248f1-34c2-4535-809d-8e848d592cb1",
-									"fieldType": "sap.m.CustomListItem",
+									"fieldNo": "49848f62-d5d7-4167-c178-0bc2a6bd873c",
+									"fieldName": "SpecieStandardListItem",
+									"fieldParent": "6d91601a-b409-43c2-f9c4-c1c112f365ee",
+									"fieldType": "sap.m.StandardListItem",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
-									"attributes": [],
-									"data": [
+									"attributes": [
 										{
-											"fieldNo": "ef8a2be7-8558-48d1-81d0-2e9d1fbcd9af",
-											"fieldName": "HBox1",
-											"fieldParent": "53d6a22f-0e18-4627-e4ed-e0c9bd1b0185",
-											"fieldType": "sap.m.HBox",
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Navigation",
 											"script": "",
-											"customComponent": false,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "justifyContent",
-													"grouping": "Properties",
-													"value": "SpaceBetween",
-													"script": "",
-													"translation": []
-												},
-												{
-													"attribute": "alignItems",
-													"grouping": "Properties",
-													"value": "Start",
-													"script": "",
-													"translation": []
-												},
-												{
-													"attribute": "wrap",
-													"grouping": "Properties",
-													"value": "NoWrap",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": [
-												{
-													"fieldNo": "5d03ab90-08a6-46d9-845f-e05778775908",
-													"fieldName": "HBox2",
-													"fieldParent": "ef8a2be7-8558-48d1-81d0-2e9d1fbcd9af",
-													"fieldType": "sap.m.HBox",
-													"script": "",
-													"customComponent": false,
-													"request": [],
-													"response": [],
-													"attributes": [
-														{
-															"attribute": "fitContainer",
-															"grouping": "Properties",
-															"value": "true",
-															"script": "",
-															"translation": []
-														},
-														{
-															"attribute": "justifyContent",
-															"grouping": "Properties",
-															"value": "Start",
-															"script": "",
-															"translation": []
-														},
-														{
-															"attribute": "alignItems",
-															"grouping": "Properties",
-															"value": "Start",
-															"script": "",
-															"translation": []
-														},
-														{
-															"attribute": "wrap",
-															"grouping": "Properties",
-															"value": "NoWrap",
-															"script": "",
-															"translation": []
-														},
-														{
-															"attribute": "styleClass",
-															"grouping": "Properties",
-															"value": "hbox-favourite-info",
-															"script": "",
-															"translation": []
-														}
-													],
-													"data": [
-														{
-															"fieldNo": "d19baa0f-6473-409a-d72a-dcf596cef34e",
-															"fieldName": "Avatar",
-															"fieldParent": "5d03ab90-08a6-46d9-845f-e05778775908",
-															"fieldType": "sap.f.Avatar",
-															"script": "",
-															"customComponent": false,
-															"request": [],
-															"response": [],
-															"attributes": [
-																{
-																	"attribute": "src",
-																	"grouping": "Properties",
-																	"value": "{poster_url}",
-																	"script": "",
-																	"translation": []
-																},
-																{
-																	"attribute": "displayShape",
-																	"grouping": "Properties",
-																	"value": "Square",
-																	"script": "",
-																	"translation": []
-																},
-																{
-																	"attribute": "displaySize",
-																	"grouping": "Properties",
-																	"value": "L",
-																	"script": "",
-																	"translation": []
-																}
-															],
-															"data": []
-														},
-														{
-															"fieldNo": "33e024fc-985e-4b65-b71d-c4ae02a7894f",
-															"fieldName": "VBox2",
-															"fieldParent": "5d03ab90-08a6-46d9-845f-e05778775908",
-															"fieldType": "sap.m.VBox",
-															"script": "",
-															"customComponent": false,
-															"request": [],
-															"response": [],
-															"attributes": [
-																{
-																	"attribute": "fitContainer",
-																	"grouping": "Properties",
-																	"value": "true",
-																	"script": "",
-																	"translation": []
-																}
-															],
-															"data": [
-																{
-																	"fieldNo": "29f23fa4-6b53-4d36-c0d0-44349b4f95a6",
-																	"fieldName": "Title",
-																	"fieldParent": "33e024fc-985e-4b65-b71d-c4ae02a7894f",
-																	"fieldType": "sap.m.Title",
-																	"script": "",
-																	"customComponent": false,
-																	"request": [],
-																	"response": [],
-																	"attributes": [
-																		{
-																			"attribute": "text",
-																			"grouping": "Properties",
-																			"value": "{title}",
-																			"script": "",
-																			"translation": []
-																		}
-																	],
-																	"data": []
-																},
-																{
-																	"fieldNo": "c46a0e61-ab0a-4b6d-d586-abd7e2b5c53b",
-																	"fieldName": "RatingIndicator1",
-																	"fieldParent": "33e024fc-985e-4b65-b71d-c4ae02a7894f",
-																	"fieldType": "sap.m.RatingIndicator",
-																	"script": "",
-																	"customComponent": false,
-																	"request": [],
-																	"response": [],
-																	"attributes": [
-																		{
-																			"attribute": "value",
-																			"grouping": "Properties",
-																			"value": "{rating}",
-																			"script": "",
-																			"translation": []
-																		},
-																		{
-																			"attribute": "displayOnly",
-																			"grouping": "Properties",
-																			"value": "true",
-																			"script": "",
-																			"translation": []
-																		},
-																		{
-																			"attribute": "editable",
-																			"grouping": "Properties",
-																			"value": "false",
-																			"script": "",
-																			"translation": []
-																		}
-																	],
-																	"data": []
-																},
-																{
-																	"fieldNo": "ffe9a8ab-73b2-4727-e434-ac49f8afefd2",
-																	"fieldName": "ExpandableText",
-																	"fieldParent": "33e024fc-985e-4b65-b71d-c4ae02a7894f",
-																	"fieldType": "sap.m.ExpandableText",
-																	"script": "",
-																	"customComponent": false,
-																	"request": [],
-																	"response": [],
-																	"attributes": [
-																		{
-																			"attribute": "text",
-																			"grouping": "Properties",
-																			"value": "{comment}",
-																			"script": "",
-																			"translation": []
-																		}
-																	],
-																	"data": []
-																}
-															]
-														}
-													]
-												},
-												{
-													"fieldNo": "554332a6-984a-48f4-ce8f-4d47a50c84ef",
-													"fieldName": "VBox1",
-													"fieldParent": "ef8a2be7-8558-48d1-81d0-2e9d1fbcd9af",
-													"fieldType": "sap.m.VBox",
-													"script": "",
-													"customComponent": false,
-													"request": [],
-													"response": [],
-													"attributes": [
-														{
-															"attribute": "direction",
-															"grouping": "Properties",
-															"value": "Column",
-															"script": "",
-															"translation": []
-														},
-														{
-															"attribute": "justifyContent",
-															"grouping": "Properties",
-															"value": "Center",
-															"script": "",
-															"translation": []
-														},
-														{
-															"attribute": "styleClass",
-															"grouping": "Properties",
-															"value": "item",
-															"script": "",
-															"translation": []
-														}
-													],
-													"data": [
-														{
-															"fieldNo": "3d83336d-d061-40bc-9bfb-f8680107e86c",
-															"fieldName": "ButtonFavouriteEdit",
-															"fieldParent": "554332a6-984a-48f4-ce8f-4d47a50c84ef",
-															"fieldType": "sap.m.Button",
-															"script": "",
-															"customComponent": false,
-															"request": [],
-															"response": [],
-															"attributes": [
-																{
-																	"attribute": "press",
-																	"grouping": "Events",
-																	"value": "Anonymous Function",
-																	"script": "file://event/sap.m.Button/ButtonFavouriteEdit/press.js",
-																	"language": "javascript",
-																	"translation": []
-																},
-																{
-																	"attribute": "icon",
-																	"grouping": "Properties",
-																	"value": "sap-icon://edit",
-																	"script": "",
-																	"translation": []
-																}
-															],
-															"data": []
-														},
-														{
-															"fieldNo": "56c853e4-2d6a-4c8f-e975-087c7af346d9",
-															"fieldName": "ButtonFavouriteDelete",
-															"fieldParent": "554332a6-984a-48f4-ce8f-4d47a50c84ef",
-															"fieldType": "sap.m.Button",
-															"script": "",
-															"customComponent": false,
-															"request": [],
-															"response": [],
-															"attributes": [
-																{
-																	"attribute": "press",
-																	"grouping": "Events",
-																	"value": "Anonymous Function",
-																	"script": "file://event/sap.m.Button/ButtonFavouriteDelete/press.script",
-																	"translation": []
-																},
-																{
-																	"attribute": "type",
-																	"grouping": "Properties",
-																	"value": "Negative",
-																	"script": "",
-																	"translation": []
-																},
-																{
-																	"attribute": "icon",
-																	"grouping": "Properties",
-																	"value": "sap-icon://delete",
-																	"script": "",
-																	"translation": []
-																}
-															],
-															"data": []
-														}
-													]
-												}
-											]
+											"translation": []
+										},
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "{name}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.StandardListItem/SpecieStandardListItem/press.script",
+											"translation": []
 										}
-									]
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "198290a8-3264-40de-ddae-115b94aab727",
+					"fieldName": "SpecieDetailPage",
+					"fieldParent": "22a05b31-1eed-454f-bd79-ac784aa98df9",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "navButtonPress",
+							"grouping": "Events",
+							"value": "App.backToPage(SpeciesPage)",
+							"script": "App.backToPage(SpeciesPage)",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+							"fieldName": "SpecieSimpleForm",
+							"fieldParent": "198290a8-3264-40de-ddae-115b94aab727",
+							"fieldType": "sap.ui.layout.form.SimpleForm",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Starwars API>Specie",
+							"bindingType": "u",
+							"bindingSource": "API",
+							"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
+							"bindingPathID": "a263ba10-40f1-4dcd-fdf8-02dda512ad8d",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "572d4401-01d5-49eb-f392-0e6f2a65bc3f",
+									"fieldName": "lblSpecieSimpleFormclassification",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "classification",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "1a6ac8da-9dc1-4ffb-ad06-cc3768a17089",
+									"fieldName": "txtSpecieSimpleFormclassification",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/classification}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "aa59e2bb-882a-404c-f246-bc5ade7e3f1b",
+									"fieldName": "lblSpecieSimpleFormdesignation",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "designation",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "e0ae2343-1a6f-4de5-bf80-f6926a08f25e",
+									"fieldName": "txtSpecieSimpleFormdesignation",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/designation}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "a090d1ec-8f9a-435f-e4e3-271a1288de0a",
+									"fieldName": "lblSpecieSimpleFormaverage_height",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "average_height",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "f2f2183e-fede-41e4-c730-1fe8f4b212c2",
+									"fieldName": "txtSpecieSimpleFormaverage_height",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/average_height}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "c4acf807-3189-4247-eeb7-bad5f8073f25",
+									"fieldName": "lblSpecieSimpleFormskin_colors",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "skin_colors",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "f647eb6f-d758-41a8-fefb-6c68b907f359",
+									"fieldName": "txtSpecieSimpleFormskin_colors",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/skin_colors}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "bf681420-1596-4ea7-fa45-5d119fb7e16c",
+									"fieldName": "lblSpecieSimpleFormhair_colors",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "hair_colors",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "bae8e68c-2b96-4da2-8a9e-b39ee301f9c0",
+									"fieldName": "txtSpecieSimpleFormhair_colors",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/hair_colors}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "fb099584-cfc1-47e0-ff29-0ac06afd0478",
+									"fieldName": "lblSpecieSimpleFormeye_colors",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "eye_colors",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "25aa7d5c-6aea-43e5-e205-ecb79761fa6a",
+									"fieldName": "txtSpecieSimpleFormeye_colors",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/eye_colors}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "da531506-457e-4d2d-977d-e928d7214136",
+									"fieldName": "lblSpecieSimpleFormaverage_lifespan",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "average_lifespan",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "b7d21803-e8c2-4b99-a1c1-1aa9dd51fa9d",
+									"fieldName": "txtSpecieSimpleFormaverage_lifespan",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/average_lifespan}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "50cb3b68-4483-4548-b391-9a92c5f30be6",
+									"fieldName": "lblSpecieSimpleFormhomeworld",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "homeworld",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "ae8711b9-c3d6-4262-d399-f2fa76fb5449",
+									"fieldName": "txtSpecieSimpleFormhomeworld",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/homeworld}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "0f4b68f5-ed58-4a74-ab95-fe7a96965dd3",
+									"fieldName": "lblSpecieSimpleFormlanguage",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "language",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "0663c890-4106-42a5-d4dc-b2da74a1bb99",
+									"fieldName": "txtSpecieSimpleFormlanguage",
+									"fieldParent": "fe85ae04-2772-480f-8c26-cfdcc8fc49eb",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/language}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "9bc42919-c933-43af-c8ff-4ae3f051292b",
+					"fieldName": "VehiclesPage",
+					"fieldParent": "22a05b31-1eed-454f-bd79-ac784aa98df9",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "navButtonPress",
+							"grouping": "Events",
+							"value": "App.backToPage(HomePage)",
+							"script": "App.backToPage(HomePage)",
+							"translation": []
+						},
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Vehicles",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "99f8beed-3b00-4702-cfb4-31de295a4a47",
+							"fieldName": "VehicleSearchField",
+							"fieldParent": "9bc42919-c933-43af-c8ff-4ae3f051292b",
+							"fieldType": "sap.m.SearchField",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "liveChange",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/sap.m.SearchField/VehicleSearchField/liveChange.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "501b68c8-988e-4c70-879e-cb00f94ffe46",
+							"fieldName": "VehiclesList",
+							"fieldParent": "9bc42919-c933-43af-c8ff-4ae3f051292b",
+							"fieldType": "sap.m.List",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Starwars API>Vehicle",
+							"bindingType": "h",
+							"bindingSource": "API",
+							"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
+							"bindingPathID": "fb7b4e2b-5b36-41a3-e376-3d6f6bb84721",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "323f6af2-9276-4dd3-f770-460c8b2c46f8",
+									"fieldName": "VehicleStandardListItem",
+									"fieldParent": "501b68c8-988e-4c70-879e-cb00f94ffe46",
+									"fieldType": "sap.m.StandardListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Navigation",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "{name}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://fas/car",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.StandardListItem/VehicleStandardListItem/press.script",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "e54e1472-e5b9-4fa6-bf52-b72aa60ae122",
+					"fieldName": "VehicleDetailPage",
+					"fieldParent": "22a05b31-1eed-454f-bd79-ac784aa98df9",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "navButtonPress",
+							"grouping": "Events",
+							"value": "App.backToPage(VehiclesPage)",
+							"script": "App.backToPage(VehiclesPage)",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "b3557667-d1ab-404f-c205-e071be8508ba",
+							"fieldName": "VehicleSimpleForm",
+							"fieldParent": "e54e1472-e5b9-4fa6-bf52-b72aa60ae122",
+							"fieldType": "sap.ui.layout.form.SimpleForm",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Starwars API>Vehicle",
+							"bindingType": "u",
+							"bindingSource": "API",
+							"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
+							"bindingPathID": "fb7b4e2b-5b36-41a3-e376-3d6f6bb84721",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "bc7366c5-4fc2-4ad4-ce39-0d3b396549de",
+									"fieldName": "lblVehicleSimpleFormmodel",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "model",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "8f30e60b-469b-4f5f-a5fc-85da629119f8",
+									"fieldName": "txtVehicleSimpleFormmodel",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/model}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "23c3f079-ef0f-4ee4-e804-cc1c053b5da3",
+									"fieldName": "lblVehicleSimpleFormmanufacturer",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "manufacturer",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "37264894-d658-4101-c98a-3d6af789c5d1",
+									"fieldName": "txtVehicleSimpleFormmanufacturer",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/manufacturer}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "ceace908-c03d-4711-f190-ef0276c15679",
+									"fieldName": "lblVehicleSimpleFormcost_in_credits",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "cost_in_credits",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "6e67f35e-9a08-42d7-93e7-3068338ff378",
+									"fieldName": "txtVehicleSimpleFormcost_in_credits",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/cost_in_credits}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "12b08615-077f-4515-e78a-baa5c7934ff8",
+									"fieldName": "lblVehicleSimpleFormlength",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "length",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "f1288252-d7dd-482b-ceac-e143c3b628cb",
+									"fieldName": "txtVehicleSimpleFormlength",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/length}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "ca3492a3-2d97-4b01-a49a-76ca1ade7d5f",
+									"fieldName": "lblVehicleSimpleFormmax_atmosphering_speed",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "max_atmosphering_speed",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "4afe5a04-3acd-4165-84da-2113428e15b1",
+									"fieldName": "txtVehicleSimpleFormmax_atmosphering_speed",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/max_atmosphering_speed}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "5a798838-aee0-478b-c9fb-1828716be854",
+									"fieldName": "lblVehicleSimpleFormcrew",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "crew",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "0a30926d-5b4c-44fa-bf56-50a9f01ac60b",
+									"fieldName": "txtVehicleSimpleFormcrew",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/crew}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "75583099-5d6d-47a5-f459-f5c93b9db5a2",
+									"fieldName": "lblVehicleSimpleFormpassengers",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "passengers",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "4c0a2a7c-0010-44da-f1bd-97640e40ee6d",
+									"fieldName": "txtVehicleSimpleFormpassengers",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/passengers}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "e75a5a7b-c87b-490b-fe81-cd50bbdedff6",
+									"fieldName": "lblVehicleSimpleFormcargo_capacity",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "cargo_capacity",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "5cdbac43-0571-4d23-fd14-b9666f010c4e",
+									"fieldName": "txtVehicleSimpleFormcargo_capacity",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/cargo_capacity}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "a8e1f2b9-229a-45e8-e3c0-f9247d8111e5",
+									"fieldName": "lblVehicleSimpleFormconsumables",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "consumables",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "f6407aab-b9e5-41fd-c434-653eb19d7801",
+									"fieldName": "txtVehicleSimpleFormconsumables",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/consumables}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "bd1566c1-c405-4845-f375-23f292179cea",
+									"fieldName": "lblVehicleSimpleFormvehicle_class",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "vehicle_class",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "f8d86aa5-46bd-4e67-f8d8-67d81849703e",
+									"fieldName": "txtVehicleSimpleFormvehicle_class",
+									"fieldParent": "b3557667-d1ab-404f-c205-e071be8508ba",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/vehicle_class}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "15e697cc-7091-4cdc-9ce2-a831d390be84",
+					"fieldName": "StarshipsPage",
+					"fieldParent": "22a05b31-1eed-454f-bd79-ac784aa98df9",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "navButtonPress",
+							"grouping": "Events",
+							"value": "App.backToPage(HomePage)",
+							"script": "App.backToPage(HomePage)",
+							"translation": []
+						},
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Starships",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "c68fbe05-a7b0-42bb-cfae-3f82766b06f8",
+							"fieldName": "StarshipSearchField",
+							"fieldParent": "15e697cc-7091-4cdc-9ce2-a831d390be84",
+							"fieldType": "sap.m.SearchField",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "liveChange",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/sap.m.SearchField/StarshipSearchField/liveChange.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "7dbfdd26-47c3-4541-da08-a5b5fce03fa5",
+							"fieldName": "StarshipsList",
+							"fieldParent": "15e697cc-7091-4cdc-9ce2-a831d390be84",
+							"fieldType": "sap.m.List",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Starwars API>Starships",
+							"bindingType": "h",
+							"bindingSource": "API",
+							"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
+							"bindingPathID": "40d101b9-91ea-4066-f404-b6f5a6dbd89d",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "d8d40d77-1430-405c-e4a5-93bc385bb28d",
+									"fieldName": "StarshipStandardListItem",
+									"fieldParent": "7dbfdd26-47c3-4541-da08-a5b5fce03fa5",
+									"fieldType": "sap.m.StandardListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Navigation",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "{name}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://fas/rocket",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.StandardListItem/StarshipStandardListItem/press.script",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "f10df4de-8dec-4400-946a-ac3af8c8809b",
+					"fieldName": "StarshipDetailPage",
+					"fieldParent": "22a05b31-1eed-454f-bd79-ac784aa98df9",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "navButtonPress",
+							"grouping": "Events",
+							"value": "App.backToPage(StarshipsPage)",
+							"script": "App.backToPage(StarshipsPage)",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+							"fieldName": "StarshipSimpleForm",
+							"fieldParent": "f10df4de-8dec-4400-946a-ac3af8c8809b",
+							"fieldType": "sap.ui.layout.form.SimpleForm",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Starwars API>Starships",
+							"bindingType": "u",
+							"bindingSource": "API",
+							"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
+							"bindingPathID": "40d101b9-91ea-4066-f404-b6f5a6dbd89d",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "92d2ab65-f7be-453c-8221-4b791c6519e6",
+									"fieldName": "lblStarshipSimpleFormmodel",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "model",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "9bd160d5-0030-4d9b-a533-19a5af682f68",
+									"fieldName": "txtStarshipSimpleFormmodel",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/model}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "01e88c00-7e82-45d5-b5cb-b137207cca16",
+									"fieldName": "lblStarshipSimpleFormmanufacturer",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "manufacturer",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "e87e4190-06bc-45e3-8d55-ede87598a152",
+									"fieldName": "txtStarshipSimpleFormmanufacturer",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/manufacturer}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "42b152e1-fc81-454a-9466-15209a904290",
+									"fieldName": "lblStarshipSimpleFormcost_in_credits",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "cost_in_credits",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "ed2b2362-c448-4f9c-9655-1435895ecaed",
+									"fieldName": "txtStarshipSimpleFormcost_in_credits",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/cost_in_credits}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "451d0d14-24f5-49ca-8560-169bed46414c",
+									"fieldName": "lblStarshipSimpleFormlength",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "length",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "840e1be0-f3f9-47ab-bdd3-1616040034e0",
+									"fieldName": "txtStarshipSimpleFormlength",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/length}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "1dec71a9-09f4-4ac8-a1e4-b2b2d0d4d0f1",
+									"fieldName": "lblStarshipSimpleFormmax_atmosphering_speed",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "max_atmosphering_speed",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "77b81bda-c473-400d-e603-b086cc9e7a56",
+									"fieldName": "txtStarshipSimpleFormmax_atmosphering_speed",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/max_atmosphering_speed}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "35406185-2532-4a90-f8e3-3f55c8cbaee5",
+									"fieldName": "lblStarshipSimpleFormcrew",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "crew",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "a41251bf-9552-4120-daaf-43ce4ba03e8f",
+									"fieldName": "txtStarshipSimpleFormcrew",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/crew}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "1fcc1566-abc6-43c8-8a59-157bcf1e00ea",
+									"fieldName": "lblStarshipSimpleFormpassengers",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "passengers",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "282af2f8-beea-4065-cef6-dddb87ff5526",
+									"fieldName": "txtStarshipSimpleFormpassengers",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/passengers}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "ef564ad1-4896-4603-9187-0377ac9af243",
+									"fieldName": "lblStarshipSimpleFormcargo_capacity",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "cargo_capacity",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "d64af40a-b3d2-4a55-bd69-a9c694977aa8",
+									"fieldName": "txtStarshipSimpleFormcargo_capacity",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/cargo_capacity}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "e45d3d39-16c4-468b-94b7-5fc6601316cd",
+									"fieldName": "lblStarshipSimpleFormconsumables",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "consumables",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "e43dddb8-0302-4997-b1c9-f2adafb30666",
+									"fieldName": "txtStarshipSimpleFormconsumables",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/consumables}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "95f6ff24-9132-49e7-bd59-d361fb24d45d",
+									"fieldName": "lblStarshipSimpleFormhyperdrive_rating",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "hyperdrive_rating",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "3921ed0b-5bb0-4c32-884b-e5de122b9875",
+									"fieldName": "txtStarshipSimpleFormhyperdrive_rating",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/hyperdrive_rating}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "77e962a3-7f4c-4003-97b1-3db872406c5d",
+									"fieldName": "lblStarshipSimpleFormMGLT",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "MGLT",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "81228b1b-5eef-4d39-e219-0dee28f51101",
+									"fieldName": "txtStarshipSimpleFormMGLT",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/MGLT}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "416b0968-57fb-4fde-f90d-0edc006a0e5c",
+									"fieldName": "lblStarshipSimpleFormstarship_class",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "starship_class",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "40f739ae-06ad-4284-b5fa-32b323729a6e",
+									"fieldName": "txtStarshipSimpleFormstarship_class",
+									"fieldParent": "6b756ccb-5656-4335-a881-03bc0b81b27e",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/starship_class}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "d37e323b-6249-4396-f07f-1b8864926b47",
+					"fieldName": "PlanetsPage",
+					"fieldParent": "22a05b31-1eed-454f-bd79-ac784aa98df9",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "navButtonPress",
+							"grouping": "Events",
+							"value": "App.backToPage(HomePage)",
+							"script": "App.backToPage(HomePage)",
+							"translation": []
+						},
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Planets",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "98eba9fa-c166-4466-eeb6-fe01317d8335",
+							"fieldName": "PlanetSearchField",
+							"fieldParent": "d37e323b-6249-4396-f07f-1b8864926b47",
+							"fieldType": "sap.m.SearchField",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "liveChange",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/sap.m.SearchField/PlanetSearchField/liveChange.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "76d9233c-9f53-47bc-99ee-70cd851c1540",
+							"fieldName": "PlanetsList",
+							"fieldParent": "d37e323b-6249-4396-f07f-1b8864926b47",
+							"fieldType": "sap.m.List",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Starwars API>Planet",
+							"bindingType": "h",
+							"bindingSource": "API",
+							"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
+							"bindingPathID": "0e20fa11-7741-4ae0-ad87-3aaa5d1e3bc1",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "e682bf70-56fd-477c-f925-d1bddaa3c0aa",
+									"fieldName": "PlanetStandardListItem",
+									"fieldParent": "76d9233c-9f53-47bc-99ee-70cd851c1540",
+									"fieldType": "sap.m.StandardListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Navigation",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "{name}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://fas/circle",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.StandardListItem/PlanetStandardListItem/press.script",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "180c6a5f-56eb-4436-8198-340e73817cbd",
+					"fieldName": "PlanetDetailPage",
+					"fieldParent": "22a05b31-1eed-454f-bd79-ac784aa98df9",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "navButtonPress",
+							"grouping": "Events",
+							"value": "App.backToPage(PlanetsPage)",
+							"script": "App.backToPage(PlanetsPage)",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+							"fieldName": "PlanetSimpleForm",
+							"fieldParent": "180c6a5f-56eb-4436-8198-340e73817cbd",
+							"fieldType": "sap.ui.layout.form.SimpleForm",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Starwars API>Planet",
+							"bindingType": "u",
+							"bindingSource": "API",
+							"bindingParentID": "f05b6132-d112-495c-8f4f-4f4db8061231",
+							"bindingPathID": "0e20fa11-7741-4ae0-ad87-3aaa5d1e3bc1",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "720d12cc-8989-4577-bf12-e067a47f3a65",
+									"fieldName": "lblPlanetSimpleFormrotation_period",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "rotation_period",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "a753be64-74d1-4b1e-a5f0-061e8ad9beca",
+									"fieldName": "txtPlanetSimpleFormrotation_period",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/rotation_period}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "a3cb1b09-a150-4e9f-c489-d3ed23ee6eae",
+									"fieldName": "lblPlanetSimpleFormorbital_period",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "orbital_period",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "0e47b0e5-4a53-46d5-c1c3-e80b5d6dacd8",
+									"fieldName": "txtPlanetSimpleFormorbital_period",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/orbital_period}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "df6ad096-c14e-4296-d565-4a81373ad1dc",
+									"fieldName": "lblPlanetSimpleFormdiameter",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "diameter",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "b0f612b4-0173-4050-dbe7-edc59926f5ca",
+									"fieldName": "txtPlanetSimpleFormdiameter",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/diameter}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "267a11fe-3608-4a3c-f8ed-77e686936edf",
+									"fieldName": "lblPlanetSimpleFormclimate",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "climate",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "3e9bd586-00b4-4196-d61f-8ae673ca2330",
+									"fieldName": "txtPlanetSimpleFormclimate",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/climate}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "5310a858-b729-4e79-a572-059e43b76feb",
+									"fieldName": "lblPlanetSimpleFormgravity",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "gravity",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "f441108f-82f4-4646-bf18-8242e50ccf9d",
+									"fieldName": "txtPlanetSimpleFormgravity",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/gravity}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "2dd6368f-59d2-49ba-be66-0f22d086ceea",
+									"fieldName": "lblPlanetSimpleFormterrain",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "terrain",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "5744eb8c-9b3c-4356-85e3-e4a58749087c",
+									"fieldName": "txtPlanetSimpleFormterrain",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/terrain}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "8612d854-3da4-4a81-a544-71a2c9cbde3d",
+									"fieldName": "lblPlanetSimpleFormsurface_water",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "surface_water",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "40fdd6f2-877f-4d3f-99af-e357525fefbf",
+									"fieldName": "txtPlanetSimpleFormsurface_water",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/surface_water}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "a2eb3c80-db89-4af8-a6bc-b15f24d96b87",
+									"fieldName": "lblPlanetSimpleFormpopulation",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "population",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "e2fc1cb8-6008-4c8d-b389-ff0088ae5e04",
+									"fieldName": "txtPlanetSimpleFormpopulation",
+									"fieldParent": "4924f961-3f86-4a9d-8694-5f057cb52d11",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/population}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
 								}
 							]
 						}
@@ -2208,7 +4732,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "25.06.12.0841",
+	"ver": "25.06.12.1711",
 	"application": "starwars",
 	"title": "",
 	"description": "",

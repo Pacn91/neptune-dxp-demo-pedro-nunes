@@ -1,10 +1,18 @@
 async function getMovies() {
   try {
     MoviesList.setBusy(true)
-    const { count, results } = await apiGetMovies();
+    const { count, results: movies } = await apiGetMovies();
+
+    const newList = movies.map((movie) => {
+      const isFavourite = favouritesList.some(favourite => favourite.title === movie.title)
+      return { 
+        ...movie, 
+        favouritesIcon: isFavourite ? "sap-icon://favorite"  : "sap-icon://add-favorite" 
+      }
+    });
 
     TabMovies.setCount(count)
-    modelMoviesList.setData(results);
+    modelMoviesList.setData(newList);
   } catch (err){
     console.error('Oops! Something went wrong while getting the Movies: ', err)
   }
@@ -12,16 +20,11 @@ async function getMovies() {
   MoviesList.setBusy(false)
 }
 
-async function getPeople(page) {
+async function getPeople() {
   try {
-    const { count, results } = await apiGetPeople({
-      parameters: {
-        page: page || 1,
-      },
-    });
+    const { results } = await apiGetPeople();
 
-    TabPeople.setCount(count)
-    modelPeopleList.setData(page ? [...modelPeopleList.getData(), ...results] : results);
+    modelPeopleList.setData(results);
   } catch (err){
     console.error('Oops! Something went wrong while getting the People: ', err)
   }
@@ -29,9 +32,8 @@ async function getPeople(page) {
 
 async function getSpecies() {
   try {
-    const { count, results } = await apiGetSpecies();
-    
-    TabSpecies.setCount(count)
+    const { results } = await apiGetSpecies();
+
     modelSpeciesList.setData(results);
   } catch (err){
     console.error('Oops! Something went wrong while getting the Species: ', err)
@@ -40,9 +42,8 @@ async function getSpecies() {
 
 async function getVehicles() {
   try {
-    const { count, results } = await apiGetVehicles();
+    const { results } = await apiGetVehicles();
     
-    TabVehicles.setCount(count)
     modelVehiclesList.setData(results);
   } catch (err){
     console.error('Oops! Something went wrong while getting the Vehicles: ', err)
@@ -51,9 +52,8 @@ async function getVehicles() {
 
 async function getStarships() {
   try {
-    const { count, results } = await apiGetStarships();
+    const { results } = await apiGetStarships();
     
-    TabStarships.setCount(count)
     modelStarshipsList.setData(results);
   } catch (err){
     console.error('Oops! Something went wrong while getting the Starships: ', err)
@@ -62,21 +62,22 @@ async function getStarships() {
 
 async function getPlanets() {
   try {
-    const { count, results } = await apiGetPlanets();
-    
-    TabPlanets.setCount(count)
+    const { results } = await apiGetPlanets();
+
     modelPlanetsList.setData(results);
   } catch (err){
     console.error('Oops! Something went wrong while getting the Planets: ', err)
   }
 }
 
-let favouritesList = []
 // Favourites
+let favouritesList = []
 async function getFavourites() {
   try {
     const response = await apiGetFavourites();
     favouritesList = response
+
+    TabFavourites.setCount(response.length)
   } catch (err){
     console.error('Oops! Something went wrong while getting your Favourites: ', err)
   }
@@ -104,22 +105,38 @@ async function createFavourite(id) {
     RatingIndicator.setValue(null)
 
     sap.m.MessageToast.show("Movie added to favourites successfully!")
+
+    // Update favourites list
     getFavourites()
+
+    // Update icon and update model
+    modelMoviesList
+      .getData()
+      .find((elem) => elem.title === data.title).favouritesIcon = "sap-icon://favorite";
+    modelMoviesList.refresh();
   } catch (err) {
     console.error('Oops! It wasn\'t possible to add this movie to the favourites: ', err)
   } 
 }
 
-async function deleteFavourite(id) {
+async function deleteFavourite(favourite) {
   try {
     await apiDeleteFavourite({
       parameters: {
-        where: JSON.stringify({id: id})
+        where: JSON.stringify({id: favourite.id})
       }
     })
 
     sap.m.MessageToast.show("Movie removed from the favourites successfully!")
+
+    // Update favourites list
     getFavourites()
+
+    // Update icon and update model
+    modelMoviesList
+      .getData()
+      .find((elem) => elem.title === favourite.title).favouritesIcon = "sap-icon://add-favorite";
+    modelMoviesList.refresh();
   } catch (err){
     console.error('Oops! We couldn\'t unfavourite this movie: ', err)
   } 

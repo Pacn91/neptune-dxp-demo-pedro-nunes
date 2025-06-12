@@ -1,0 +1,14 @@
+.item {
+    padding: 16px;
+}
+
+.additional-info {
+    margin-top: 16px;
+    gap: 32px;
+}
+
+.hbox-favourite-info {
+    flex: 1;
+    padding: 16px;
+    gap: 24px
+}
